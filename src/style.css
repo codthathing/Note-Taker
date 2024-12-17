@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#textTop {
+    text-transform: capitalize; 
+    color: green;
+}
+
+#textDiv {
+    display: flex; 
+}
+
+#notLabel {
+    margin-right: 0.5rem; 
+    color: green;
+}
+
+#add-note {
+    width: 100%;
+    height: auto;
+    resize: none;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+#add-btn {
+    background-color: green;
+    border-radius: 0.2rem;
+    color: white;
+    border: hidden;
+    outline: none;
+    cursor: pointer;
+}
+
+.don-div {
+    border: 1px solid rgb(228, 222, 222);
+}
+
+.clear-btn {
+    font-weight: bolder; 
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.texts {
+    word-break: keep-all; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read-btn {
+    background-color: green;
+    color: white;
+    border: hidden;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+#det-div {
+    background-color: rgba(228, 222, 222, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+#det-div.open-mess {
+    display: block;
+    opacity: 1;
+}
+
+#noteDet {
+    word-break: keep-all;
+    background-color: white;
+    height: fit-content;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    max-height: 95vh;
+    overflow-y: auto;
+}
+
+#note-det {
+    color: black;
+    white-space: break-spaces;
+    word-break: keep-all;
+}
+
+#back-btn {
+    font-weight: bolder; 
+    outline: none;
+    background: none;
+    border: none;
+}
+
+
+
+
+@media all and (max-width: 767px) {
+    #body {
+        padding: 0.5rem;
+    }
+
+    #textTop {
+        font-size: 1.25rem;
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+    #textDiv {
+        margin-bottom: 0.5rem;
+    }
+
+    #notLabel {
+        font-size: 1.25rem; 
+    }
+
+    #add-note {
+        font-size: 1rem;
+        padding: 0.25rem;
+    }
+
+    #add-btn {
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+
+    .don-div {
+        margin-bottom: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    .clear-btn {
+        font-size: 1.25rem;
+    }
+
+    .texts {
+        font-size: 1rem; 
+        margin-bottom: 0.5rem; 
+    }
+
+    .read-btn {
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    #noteDet {
+        padding: 0.5rem;
+    }
+
+    #note-det {
+        font-size: 1rem;
+    }
+
+    #back-btn {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+
+    #body {
+        padding: 1rem;
+    }
+
+    #textTop {
+        font-size: 2rem;
+        margin: 1rem  0 1rem 0;
+    }
+
+    #textDiv {
+        margin-bottom: 1rem;
+    }
+
+    #notLabel {
+        font-size: 2rem; 
+    }
+
+    #add-note {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    #add-btn {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    }
+
+    .don-div {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+
+    .clear-btn {
+        font-size: 1.5rem;
+    }
+
+    .texts {
+        font-size: 1.5rem; 
+        margin-bottom: 0.5rem; 
+    }
+
+    .read-btn {
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        font-size: 1.5rem;
+    }
+
+    #noteDet {
+        padding: 1rem;
+    }
+
+    #note-det {
+        font-size: 2rem;
+    }
+
+    #back-btn {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+@media all and (min-width: 1024px) {
+
+    #body {
+        border: 2px solid green;
+        padding: 1rem;
+        height: fit-content;
+        position: absolute;
+        margin: 1rem auto;
+        left: 0;
+        right: 0;
+        width: 50%;
+    }
+
+    #textTop {
+        margin: 1rem 0 0.5rem 0;
+        font-size: 1.5rem;
+    }
+
+    #textDiv {
+        margin-bottom: 0.5rem;
+    }
+
+    #notLabel {
+        font-size: 1.5rem; 
+    }
+
+    #add-note {
+        font-size: 1.2rem;
+        padding: 0.25rem;
+    }
+
+    #add-btn {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+
+    .don-div {
+        margin-bottom: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    .clear-btn {
+        font-size: 1.2rem;
+    }
+
+    .texts {
+        font-size: 1.2rem; 
+        margin-bottom: 0.5rem; 
+    }
+
+    .read-btn {
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    #noteDet {
+        padding: 0.5rem;
+        width: 50%;
+    }
+
+    #note-det {
+        font-size: 1.2rem;
+    }
+
+    #back-btn {
+        font-size: 1.5rem;
+    }
+}
